@@ -33,6 +33,7 @@ jobs:
         run: |
             docker pull csineva/libertyapp:0.1
             docker run -d --name liberty_app -p 8080:80 csineva/libertyapp:0.1
+            sleep 2
 
 
       - name: Run Playwright tests
