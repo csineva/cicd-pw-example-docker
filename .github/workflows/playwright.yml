@@ -29,6 +29,12 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
+      - name: Pull Docker images and start container
+        run: |
+            docker pull csineva/libertyapp:0.1
+            docker run -d --name liberty_app -p 8080:80 csineva/libertyapp:0.1
+
+
       - name: Run Playwright tests
         run: npx playwright test --project=chromium
 
