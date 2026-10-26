@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szabadság szobor</title>
+  </head>
+
+  <body style="background-color: beige; margin: auto; padding: 50px;">
+    
+    <div style="margin: auto; width: 400px; background-color: lightblue; padding: 50px; text-align: center;border-radius: 10px;">
+    <img src="statue.avif" alt="Szabiszobi" width="400" style="border-radius: 10px;">
+    <h3>Milyen magas a Szabadság-szobor?</h3>
+    <p>Tippeld meg a magasságot!</p>
+    <input type="text" id="tipp-input">
+    <br>
+    <br>
+    <button onclick="tippcheck()">Tipp</button>
+    <p id="result"></p>
+    </div>
+    <!-- <script>
+      // elem = document.getElementById("result");
+      // console.log(elem);
+
+      function tippcheck() {
+        let inputValue = document.getElementById("tipp-input").value;
+        let result = document.getElementById("result");
+        console.log(inputValue);
+
+
+        if (inputValue > 93) {
+          result.innerHTML = "Nem, ennél kisebb.";
+        } else if (inputValue < 93) {
+          result.innerHTML = "Nem, ennél nagyobb.";
+        } else {
+          result.innerHTML = "Gratulálok, eltaláltad!";
+        }
+      }
+    </script> -->
+    <script src="liberty_js.js"></script>
+  </body>
+
+</html>
